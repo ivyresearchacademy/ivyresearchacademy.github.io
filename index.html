@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<!--
+    Relativity by Pixelarity
+    pixelarity.com | hello@pixelarity.com
+    License: pixelarity.com/license
+-->
+<html>
+    <head>
+        <title>IvyResearchAcademy - Home</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="is-preload">
+
+        <!-- Wrapper -->
+            <div id="wrapper">
+
+                <!-- Header -->
+                    <header id="header" class="alt">
+
+                        <!-- Logo -->
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="images/logo_color_black.png" alt="Ivy Research Logo" style="height: 20px; width: auto; margin-right: 10px;">
+                                    <strong>Ivy Research Academy</strong>
+                                </a>
+                            </div>
+
+                        <!-- Nav -->
+                            <nav id="nav">
+                                <ul>
+                                    <li class="current"><a href="index.html">Home</a></li>
+                                    <li><a href="offer.html">What we offer</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="references.html">References</a>
+                                </ul>
+                            </nav>
+
+                    </header>
+
+                <!-- Banner -->
+                    <section id="banner">
+                        <div class="content">
+                            <!-- <img src="images/logo_nofill_white.png" alt="Ivy Research Logo" style="height: 80px; width: auto;"> -->
+                            <h1>Ivy Research Academy</h1>
+                            <p>The Foundation of Academic Success</p>
+                        </div>
+                        <a href="#first" class="more scrolly">Learn More</a>
+                    </section>
+
+                <!-- Section --> <!-- main | main alt | main accent1 | main accent2 -->
+                    <section class="main alt" id="first">
+                        <header>
+                            <h2>Mission Statement</h2>
+                            <p class="dynamic-text">Ivy Research Academy is dedicated to empowering high school students with the knowledge and skills they need to excel in their university applications and thrive in their academic pursuits. Founded by academic economists, our mission is to demystify the fundamentals of econometrics, making this crucial aspect of economics accessible and intuitive for young learners.</p>
+
+                            <p class="dynamic-text">We offer small, personalized courses that help high school and undergraduate students master the art of statistical analysis, data science and causal inference. Going beyond theory, our courses equip students with data analysis skills and include personlized research supervision that enables each student write and publish an empirical research paper. Through our engaging and practical approach, we aim to cultivate critical thinking, analytical skills, and a passion for learning in every student.</p>
+
+                            <p class="dynamic-text">Our goal is to prepare students for success in university and beyond, instilling confidence and competence in their academic journey. By bridging the gap between high school education and university demands, we strive to create a foundation for lifelong learning and achievement in the field of economics and related disciplines.</p>
+                        </header>
+                        <div class="inner">
+                            <article class="post style2">
+                                <div class="content">
+                                    <header>
+                                        <span class="category">Empirical Research</span>
+                                        <h3>Correlation or Causation?</h3>
+                                    </header>
+                                    <p>Questions related to public policy, private business, charity work and international NGO’s all increasingly rely on data to make informed decisions. To have access to high quality data and to analyze it correctly, however, are two different things. At Ivy Research Academy, we equip students with relevant theoretical knowledge and practical coding skills in order to distinguish between causal relations and mere statistical correlations.</p>
+                                    <ul class="actions">
+                                        <li><a href="case_study.html" class="button next">Learn More - Gender Wage Gap Mini Case Study</a></li>
+                                    </ul>
+                                </div>
+                                <div class="image" data-position="center"><img src="images/pic_reg1.jpg" alt="" /></div>
+                            </article>
+                        </div>
+                    </section>
+
+
+                <!-- Footer -->
+                    <footer id="footer">
+                        <ul class="icons">
+                            <li><a href="contact.html" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+                        </ul>
+                        <p class="copyright">&copy; Ivy Research Academy. All rights reserved.</p>
+                    </footer>
+
+            </div>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.dropotron.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const paragraphs = document.querySelectorAll("#wrapper > .main > header p.dynamic-text");
+                    paragraphs.forEach(paragraph => {
+                        if (paragraph.offsetHeight < parseInt(getComputedStyle(paragraph).lineHeight) * 2) {
+                            paragraph.classList.add('center');
+                        } else {
+                            paragraph.classList.add('justify');
+                        }
+                    });
+                });
+            </script>
+    </body>
+</html>

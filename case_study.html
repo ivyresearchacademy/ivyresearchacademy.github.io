@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<!--
+	Relativity by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>IvyResearchAcademy - Case Study</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+
+						<!-- Logo -->
+							<div class="logo">
+								<a href="index.html"><strong>Ivy Research Academy</strong></a>
+							</div>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="offer.html">What we offer</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li><a href="references.html">References</a>
+								</ul>
+							</nav>
+					</header>
+
+				<!-- Section -->
+					<section class="main alt special">
+						<header>
+							<h1>Gender Wage Gap - Mini Case Study</h1>
+						</header>
+						<div class="inner style2">
+							<p>The gender wage gap is a crucial and often debated issue in today's society, capturing the attention of researchers, policymakers, and the public alike. At its core, the wage gap represents the average difference in earnings between men and women.</p>
+							<p><span class="image left" style="width:40%"><iframe src="images/gender_pay_gap_raw.html" style="width:100%; height:300px"></iframe></span>Using survey data of 3 million people from 2021 in the USA confirms that a gender wage gap exists. The first figure displays earnings data for men and women in this sample and shows a substantial disparity: men earn on average $12,000 more than women. This significant gap suggests underlying issues in pay equity.</p>
+							<p>However, drawing conclusions from headline figures can be misleading. To get a more accurate picture of the actual size of the gender wage gap, a deeper analysis is required. This analysis starts by considering other factors relevant to both gender and wages. One such example is occupational choice. It could be that men and women systematically sort into different occupational types and that these occupations, more than gender per se, drive the gender wage gap.</p>
+							<p><span class="image right" style="width:40%"><iframe src="images/gender_pay_gap_control.html" style="width:100%; height:300px"></iframe></span>In the second figure, we examine this possibility. As shown, once we factor in job types, the wage gap varies notably across different skill levels.</p>
+							<p>In low-skill jobs, the gender wage gap persists, with men earning $9,000 more than women. This difference, though smaller than the initial raw gap, still highlights significant disparities. By contrast, in high-skill jobs, the gap narrows substantially to $3,000. This smaller gap indicates that while disparities remain, high-skill occupations show less pronounced differences in earnings between men and women. The question now becomes what drives occupational choice and whether there may be systematic forces that drive men and women toward different types of occupations.</p>
+							<p>These insights underscore the critical need to understand and demystify data analysis when examining important social issues. Naive interpretations based on raw differences can oversimplify complex issues and ignore vital factors like occupation. By exploring these conditional differences, we can achieve a more comprehensive understanding of the wage gap and the dynamics that drive it. This deeper perspective is essential for crafting informed and effective policies aimed at achieving pay equity.</p>
+							<h4>Empower Your Analytical Skills with Ivy Research Academy</h4>
+							<p>At Ivy Research Academy, we equip high school students with the skills and knowledge needed to conduct such nuanced and detailed analysis. Founded by academic economists, our courses make the fundamentals of econometrics accessible and intuitive. Through personalized instruction and hands-on research supervision, students learn to master statistical analysis, data science, and causal inference. Contact us today to learn more.</p>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="contact.html" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Ivy Research Academy. All rights reserved.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const paragraphs = document.querySelectorAll("#wrapper > .main > header p.dynamic-text");
+                    paragraphs.forEach(paragraph => {
+                        if (paragraph.offsetHeight < parseInt(getComputedStyle(paragraph).lineHeight) * 2) {
+                            paragraph.classList.add('center');
+                        } else {
+                            paragraph.classList.add('justify');
+                        }
+                    });
+                });
+            </script>
+	</body>
+</html>
