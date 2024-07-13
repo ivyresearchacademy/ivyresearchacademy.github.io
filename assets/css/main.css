@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Raleway:800|Source+Sans+Pro:300,300i,600,600i");
+@import url("https://fonts.googleapis.com/css?family=Raleway:800|Source+Sans+Pro:300,300i,400,400i,600,600i");
 
 /*
 	Relativity by Pixelarity
@@ -199,6 +199,7 @@ input, select, textarea {
 	p {
 		margin: 0 0 2rem 0;
 		width: 100%;
+		font-weight: 300;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -2725,8 +2726,18 @@ input, select, textarea {
 		}
 
 		.image.left, .image.right {
-			max-width: 100%;
+			width: 40%;
 		}
+
+        /* Mobile style */
+        @media (max-width: 600px) {
+            .image.left {
+                width: 100%;
+            }
+            .image.right {
+                width: 100%;
+            }
+        }
 
 			.image.left img, .image.right img {
 				width: 100%;
