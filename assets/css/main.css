@@ -4702,3 +4702,11 @@ input, select, textarea {
 	width: 100%;
 	height: 100%;
 }
+
+/* Forms */
+.cryptpad-form {
+  border: none;               /* remove default border if any */
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);  /* a subtle shadow */
+  border-radius: 4px;         /* optional: rounded corners */
+  overflow: hidden;           /* clips any inner overflow, if needed */
+}
